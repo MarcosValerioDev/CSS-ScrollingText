@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+html, body{
+	width: 100vw;
+	height:100vh;
+}
+
+.container
+{
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	font-family: "Science Gothic";
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+	background-color: #670097;
+}
+section
+{
+	background-color: #670097;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+
+}
+
+
+
+section div
+{
+	position: relative;
+	background: #3202a3;
+	overflow: hidden;
+}
+section div:nth-child(1)
+{
+	width: 50%;
+	/*background: #000;*/
+	background: url('img.jpg');
+	background-size: cover;
+	/*border-right: 2px solid #fff;*/
+	box-sizing: border-box;
+}
+
+section div:nth-child(2)
+{
+	width: 50%;
+	/*background: #000;*/
+	background: url('Img2.jpg');
+	background-size: cover;
+	/*border-right: 2px solid #fff;*/
+	box-sizing: border-box;
+}
+
+section div h2
+{
+	position: absolute;
+	white-space: nowrap;
+	font-size: 12em;
+		font-family: "Science Gothic";
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
+
+section div:nth-child(1) h2
+{
+	left: 100%;
+	animation: animate 60s linear infinite;
+	-webkit-text-stroke: 2px;
+	-webkit-text-stroke-color: #00ff00;
+	-webkit-text-fill-color: transparent;
+}
+
+section div:nth-child(2) h2
+{
+		font-family: "Science Gothic";
+  font-optical-sizing: auto;
+  font-weight: bold;
+	left: 0;
+	color: #00ff00;
+	animation: animate 60s linear infinite;
+}
+
+section div h2
+{
+	line-height: 100vh;
+}
+
+@keyframes animate
+{
+	0%
+	{
+		transform: translateX(0);
+	}
+/*	50%
+	{
+		transform: translateX(-100%);
+	}*/
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
